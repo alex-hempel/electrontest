@@ -5,11 +5,17 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --mac --windows --linux",
+    "release": "electron-builder --mac --windows --linux --publish always"
   },
   "author": "Alex Hempel",
   "license": "ISC",
   "dependencies": {
     "electron": "~11.2.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.9.1"
   }
 }
