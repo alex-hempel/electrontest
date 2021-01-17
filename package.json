@@ -12,9 +12,6 @@
   },
   "author": "Alex Hempel",
   "license": "ISC",
-  "dependencies": {
-    "electron": "~11.2.0"
-  },
   "devDependencies": {
     "electron-builder": "^22.9.1"
   }
